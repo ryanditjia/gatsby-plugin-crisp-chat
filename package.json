@@ -1,11 +1,14 @@
 {
   "name": "gatsby-plugin-crisp-chat",
   "description": "Gatsby plugin to add Crisp Livechat to your site",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Ryandi Tjia <ryandi.tjia@gmail.com>",
   "repository": "https://github.com/ryanditjia/gatsby-plugin-crisp-chat",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "prepublish": "npm run build"
+  },
   "keywords": [
     "gatsby",
     "gatsby-plugin",
@@ -14,5 +17,11 @@
   "license": "MIT",
   "peerDependencies": {
     "gatsby": "^1.0.0"
-  }
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
+  },
+  "dependencies": {}
 }
