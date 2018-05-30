@@ -34,3 +34,9 @@ module.exports = {
 ```
 
 Restart your Gatsby server for the plugin to take effect.
+
+## Roadmap
+
+- Add an option to disable the plugin during `gatsby develop`.
+
+If you have improvements that you’d like to see, or encounter any bugs, feel free to [create an issue](https://github.com/ryanditjia/gatsby-plugin-crisp-chat/issues)!
