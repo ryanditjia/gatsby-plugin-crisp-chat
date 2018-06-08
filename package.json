@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-crisp-chat",
   "description": "Gatsby plugin to add Crisp Livechat to your site",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "author": "Ryandi Tjia <ryandi.tjia@gmail.com>",
   "repository": {
     "type": "git",
