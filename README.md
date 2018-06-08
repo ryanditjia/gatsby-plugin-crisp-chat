@@ -24,6 +24,8 @@ module.exports = {
       resolve: 'gatsby-plugin-crisp-chat',
       options: {
         websiteId: 'YOUR_CRISP_WEBSITE_ID',
+        // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
+        development: false,
       },
     }
     'your',
@@ -34,9 +36,5 @@ module.exports = {
 ```
 
 Restart your Gatsby server for the plugin to take effect.
-
-## Roadmap
-
-- Add an option to disable the plugin during `gatsby develop`.
 
 If you have improvements that you’d like to see, or encounter any bugs, feel free to [create an issue](https://github.com/ryanditjia/gatsby-plugin-crisp-chat/issues)!
