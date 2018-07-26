@@ -1,5 +1,13 @@
 {
   "presets": [
-    "env", "react"
+    [
+      "env",
+      {
+        "targets": {
+          "node": "6.0"
+        }
+      }
+    ],
+    "react"
   ]
 }
