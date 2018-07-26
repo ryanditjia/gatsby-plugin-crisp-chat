@@ -19,12 +19,12 @@ exports.onRenderBody = (
     return null
   }
 
-  const crispConfig = `window.$crisp=[];window.CRISP_WEBSITE_ID="${websiteId}";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`
+  const scriptInnerHTML = `window.$crisp=[];window.CRISP_WEBSITE_ID="${websiteId}";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`
 
   return setHeadComponents([
     <script
       key="gatsby-plugin-crisp-chat"
-      dangerouslySetInnerHTML={{ __html: crispConfig }}
+      dangerouslySetInnerHTML={{ __html: scriptInnerHTML }}
     />,
   ])
 }
