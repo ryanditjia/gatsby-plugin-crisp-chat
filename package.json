@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-crisp-chat",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "description": "Gatsby plugin to add Crisp Livechat to your site",
   "keywords": [
     "gatsby",
