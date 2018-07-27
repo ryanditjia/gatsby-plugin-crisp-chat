@@ -25,7 +25,7 @@ module.exports = {
       options: {
         websiteId: 'YOUR_CRISP_WEBSITE_ID',
         // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
-        development: false,
+        enableDuringDevelop: false,
       },
     }
     'your',
@@ -38,3 +38,7 @@ module.exports = {
 Restart your Gatsby server for the plugin to take effect.
 
 If you have improvements that you’d like to see, or encounter any bugs, feel free to [create an issue](https://github.com/ryanditjia/gatsby-plugin-crisp-chat/issues)!
+
+## Changelog
+
+Version 2 has a breaking change: configuration option that used to be named `development` has been reworded to `enableDuringDevelop` so its purpose is much clearer.
