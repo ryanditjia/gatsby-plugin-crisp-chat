@@ -3,11 +3,11 @@ import React from 'react'
 
 exports.onRenderBody = (
   { setHeadComponents },
-  { websiteId, development = true }
+  { websiteId, enableDuringDevelop = true }
 ) => {
-  if (!development && process.env.NODE_ENV === 'development') {
+  if (!enableDuringDevelop && process.env.NODE_ENV === 'development') {
     console.log(
-      'gatsby-plugin-crisp-chat configured not to load during development.'
+      'gatsby-plugin-crisp-chat configured not to load in development server.'
     )
     return null
   }
