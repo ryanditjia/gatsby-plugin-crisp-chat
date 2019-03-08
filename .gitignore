@@ -1,5 +1,5 @@
 node_modules
-/*.js
+gatsby-ssr.js
 !index.js
 
 .DS_Store
