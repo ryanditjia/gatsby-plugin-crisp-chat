@@ -1,9 +1,13 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react'
 
+function getAsyncOrDefer(isDefer) {
+  return isDefer ? 's.defer=1' : 's.async=1'
+}
+
 exports.onRenderBody = (
   { setHeadComponents },
-  { websiteId, enableDuringDevelop = true },
+  { websiteId, enableDuringDevelop = true, defer = false },
 ) => {
   if (!enableDuringDevelop && process.env.NODE_ENV === 'development') {
     console.log(
@@ -19,7 +23,12 @@ exports.onRenderBody = (
     return null
   }
 
-  const scriptInnerHTML = `window.$crisp=[];window.CRISP_WEBSITE_ID="${websiteId}";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.defer=1;d.getElementsByTagName("head")[0].appendChild(s);})();`
+  const scriptInnerHTML =
+    `window.$crisp=[];window.CRISP_WEBSITE_ID="${websiteId}";` +
+    `(function(){d=document;s=d.createElement("script");` +
+    `s.src="https://client.crisp.chat/l.js";` +
+    `${getAsyncOrDefer(defer)};` +
+    `d.getElementsByTagName("head")[0].appendChild(s);})();`
 
   return setHeadComponents([
     <script
