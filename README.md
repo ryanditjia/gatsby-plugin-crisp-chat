@@ -24,8 +24,8 @@ module.exports = {
       resolve: 'gatsby-plugin-crisp-chat',
       options: {
         websiteId: 'YOUR_CRISP_WEBSITE_ID',
-        // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
-        enableDuringDevelop: false,
+        enableDuringDevelop: false, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
+        defer: true, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
       },
     }
     'your',
@@ -42,3 +42,5 @@ If you have improvements that you’d like to see, or encounter any bugs, feel f
 ## Changelog
 
 Version 2 has a breaking change: configuration option that used to be named `development` has been reworded to `enableDuringDevelop` so its purpose is much clearer.
+
+Version 3 adds an option to set defer to the Crisp script. Thanks [rturk](https://github.com/rturk) for your [suggestion](https://github.com/ryanditjia/gatsby-plugin-crisp-chat/issues/1).
