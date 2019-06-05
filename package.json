@@ -22,13 +22,13 @@
     "format": "prettier --write \"src/**/*.js\""
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
-    "eslint": "^5.15.1",
+    "eslint": "^5.16.0",
     "eslint-config-ryanditjia": "^3.1.0",
-    "prettier": "^1.16.4"
+    "prettier": "^1.17.1"
   },
   "peerDependencies": {
     "gatsby": "^1.0.0 || ^2.0.0 || ^2.0.0-alpha || ^2.0.0-beta"
