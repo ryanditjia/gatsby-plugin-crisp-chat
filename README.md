@@ -42,4 +42,4 @@ If you have improvements that you’d like to see, or encounter any bugs, feel f
 
 ## Changelog
 
-See [CHANGELOG.md](changelog.md)
+See [CHANGELOG.md](CHANGELOG.md)
