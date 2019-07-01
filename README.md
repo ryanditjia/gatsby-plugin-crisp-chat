@@ -42,6 +42,4 @@ If you have improvements that you’d like to see, or encounter any bugs, feel f
 
 ## Changelog
 
-Version 2 has a breaking change: configuration option that used to be named `development` has been reworded to `enableDuringDevelop` so its purpose is much clearer.
-
-Version 3 adds an option to set defer to the Crisp script. Thanks [rturk](https://github.com/rturk) for your [suggestion](https://github.com/ryanditjia/gatsby-plugin-crisp-chat/issues/1).
+See [CHANGELOG.md](changelog.md)
