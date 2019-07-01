@@ -26,7 +26,7 @@ module.exports = {
         websiteId: 'YOUR_CRISP_WEBSITE_ID',
         enableDuringDevelop: false, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
         defer: true, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
-        accessible: false // Optional. Sets aria-label attribute on crisp plugin for screen readers. Defaults to false.
+        enableImprovedAccessibility: false // Optional. Sets aria-label attribute on pop-up icon for screen readers. Defaults to true.
       },
     }
     'your',

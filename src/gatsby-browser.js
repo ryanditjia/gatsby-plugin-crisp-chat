@@ -1,5 +1,5 @@
-exports.onInitialClientRender = (_, { accessible = true }) => {
-  if (accessible) {
+exports.onInitialClientRender = (_, { enableImprovedAccessibility = true }) => {
+  if (enableImprovedAccessibility) {
     const container = document.documentElement || document.body
     const config = { attributes: true, childList: true, subtree: true }
 
