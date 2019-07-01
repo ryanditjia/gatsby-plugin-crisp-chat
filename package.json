@@ -36,5 +36,7 @@
   "engines": {
     "node": ">=6.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gatsby-plugin-crisp-chat": "^3.1.0"
+  }
 }
