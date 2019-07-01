@@ -1,5 +1,6 @@
 node_modules
 gatsby-ssr.js
+gatsby-browser.js
 !index.js
 
 .DS_Store
