@@ -12,14 +12,15 @@ exports.onInitialClientRender = (_, {
     };
     let domObserver = new MutationObserver(mutations => {
       mutations.forEach(mutation => {
-        if (mutation.type === "childList") {
+        if (mutation.type === 'childList') {
+          /* eslint-disable no-useless-computed-key */
           const addedNodes = mutation.addedNodes[0];
-          const crispContainerExists = addedNodes && addedNodes.childNodes[0] && addedNodes.childNodes[0].className === "crisp-kquevr";
+          const crispContainerExists = addedNodes && addedNodes.childNodes[0] && addedNodes.childNodes[0].className === 'crisp-kquevr';
 
           if (crispContainerExists) {
-            const crispBoxElements = document.getElementsByClassName("crisp-kquevr");
+            const crispBoxElements = document.getElementsByClassName('crisp-kquevr');
             let crispBox = crispBoxElements[0];
-            crispBox.setAttribute("aria-label", "crisp chat box");
+            crispBox.setAttribute('aria-label', 'crisp chat box');
             domObserver.disconnect();
           }
         }

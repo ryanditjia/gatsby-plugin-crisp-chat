@@ -1,31 +1,32 @@
-exports.onInitialClientRender = (_, {
-  accessible = true
-}) => {
-  if(accessible) {
-    const container = document.documentElement || document.body;
-    const config = { attributes: true, childList: true, subtree: true };
+exports.onInitialClientRender = (_, { accessible = true }) => {
+  if (accessible) {
+    const container = document.documentElement || document.body
+    const config = { attributes: true, childList: true, subtree: true }
 
     let domObserver = new MutationObserver(mutations => {
       mutations.forEach(mutation => {
-        if(mutation.type === "childList" ) {
-          const { [0]: addedNodes } = mutation.addedNodes;
+        if (mutation.type === 'childList') {
+          /* eslint-disable no-useless-computed-key */
+          const { [0]: addedNodes } = mutation.addedNodes
 
-          const crispContainerExists = 
-            addedNodes && 
-            addedNodes.childNodes[0] && 
-            addedNodes.childNodes[0].className === "crisp-kquevr";
+          const crispContainerExists =
+            addedNodes &&
+            addedNodes.childNodes[0] &&
+            addedNodes.childNodes[0].className === 'crisp-kquevr'
 
-          if(crispContainerExists) {
-            const crispBoxElements = document.getElementsByClassName("crisp-kquevr");
-            let crispBox = crispBoxElements[0];
-            crispBox.setAttribute("aria-label", "crisp chat box");
+          if (crispContainerExists) {
+            const crispBoxElements = document.getElementsByClassName(
+              'crisp-kquevr',
+            )
+            let crispBox = crispBoxElements[0]
+            crispBox.setAttribute('aria-label', 'crisp chat box')
 
-            domObserver.disconnect();
+            domObserver.disconnect()
           }
         }
-      });
-    });
+      })
+    })
 
-    domObserver.observe(container, config);
+    domObserver.observe(container, config)
   }
-};
+}
