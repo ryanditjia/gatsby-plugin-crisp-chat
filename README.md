@@ -4,7 +4,7 @@ Add [Crisp Livechat](https://crisp.chat/) to your Gatsby site.
 
 ## Install
 
-`npm install --save gatsby-plugin-crisp-chat`
+`npm install --save gatsby-plugin-crisp-chat` or `yarn add gatsby-plugin-crisp-chat`
 
 ## How to use
 
