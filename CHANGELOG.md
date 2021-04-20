@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.2.3] — 2021-04-19
+
+Upgrade dependencies.
+
 ## [3.2.2] — 2019-11-13
 
 Upgrade dependencies and fix package security vulnerability.

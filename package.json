@@ -31,7 +31,7 @@
     "prettier": "^1.19.1"
   },
   "peerDependencies": {
-    "gatsby": "^1.0.0 || ^2.0.0 || ^2.0.0-alpha || ^2.0.0-beta"
+    "gatsby": "^1.0.0 || ^2.0.0 || ^3.0.0"
   },
   "engines": {
     "node": ">=6.0"
