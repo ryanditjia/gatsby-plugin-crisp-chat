@@ -1,5 +1,7 @@
 # gatsby-plugin-crisp-chat
 
+UNMAINTAINED. If anyone wants to take over it would be much appreciated.
+
 Add [Crisp Livechat](https://crisp.chat/) to your Gatsby site.
 
 ## Install
